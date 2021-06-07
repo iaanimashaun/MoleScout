@@ -12,6 +12,7 @@ First, clone this repository.
 After, install all necessary to run:
 
     $ conda create -n MoleScout
+    $ conda activate MoleScout
     $ pip install -r requirments.txt
 
 Than, run the application:

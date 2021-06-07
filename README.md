@@ -1,7 +1,8 @@
 # MoleScout
 
 ## About And Demo
-    $ [http://molescout.us-east-2.elasticbeanstalk.com]
+    $ [About](http://molescout.us-east-2.elasticbeanstalk.com)
+    $ [Demo](http://molescout.us-east-2.elasticbeanstalk.com/demo)
 
 
 ## Instalation

@@ -8,7 +8,7 @@
   [Demo](http://molescout.us-east-2.elasticbeanstalk.com/demo)
 
 
-## Instalation
+## Installation
 
 First, clone this repository.
 
@@ -21,11 +21,11 @@ After, install all necessary to run:
     $ conda activate MoleScout
     $ pip install -r requirments.txt
 
-Than, run the application:
+Then, run the application:
 
 	$ python application.py
 
-To see your application, access this url in your browser: 
+To see the application, access this url in your browser: 
 
 	http://localhost:5000
 

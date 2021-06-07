@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>MoleScout</title>
+    <meta name="description" content="WebSlides is the easiest way to make HTML presentations. Just essential features, clean code, and lovely CSS.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="{{ url_for('static', filename='css/webslides.css')}}">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="{{ url_for('static', filename='css/svg-icons.css')}}">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://your-url.com/permalink"> <!-- EDIT -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Make a Keynote presentation using HTML"> <!-- EDIT -->
+    <meta property="og:description" content="WebSlides is the easiest way to make HTML presentations. 120+ free slides ready to use."> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:32:14"> <!-- EDIT -->
+    <meta property="og:image" content="{{ url_for('static', filename='images/share-webslides.jpg')}}" > <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+    <meta name="twitter:title" content="Make a Keynote presentation using HTML"> <!-- EDIT -->
+    <meta name="twitter:description" content="WebSlides is the easiest way to make HTML presentations. 120+ free slides ready to use."> <!-- EDIT -->
+    <meta name="twitter:image" content="{{ url_for('static', filename='images/share-webslides.jpg')}}"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="{{ url_for('static', filename='images/favicons/favicon.png')}}">
+    <link rel="shortcut icon" sizes="32x32" href=" {{ url_for('static', filename='images/favicons/favicon-32.png')}}">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="{{ url_for('static', filename='images/favicons/favicon-76.png')}}">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="{{ url_for('static', filename='images/favicons/favicon-120.png')}}">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="{{ url_for('static', filename='images/favicons/favicon-152.png')}}">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="{{ url_for('static', filename='images/favicons/favicon-180.png')}}">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="{{ url_for('static', filename='images/favicons/favicon-192.png')}}">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+
+
+
+
+   
+
+  </head>
+
+
+
+  <body>
+    
+
+    <main role="main">
+      <article id="webslides">
+
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+
+        
+
+        
+
+
+        <section class="bg-apple slide-bottom">
+          <!-- Overlay/Opacity: [class*="bg-"] > .background.dark or .light --> 
+          <span class="background" style="background-image:url('{{ url_for('static', filename='images/mot6.jpeg')}}"></span>
+          <div class="wrap">
+            <!-- <div class="content-left">
+              <p>
+                <svg class="large fa-tree">
+                  <use xlink:href="#fa-tree"></use>
+                </svg>
+              </p>
+              <h2>Network: Transfer Learning</h2>
+              <h3></h3>
+              <h3>Convolutional Neural Networks are very good at the task of image processing and classifications.</h3>
+            </div> -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="content-center">
+              <h2>Introduction</h2>
+            </div>
+            <!-- end .content-left -->
+            <div class="content-left">
+              <p>Skin cancer is the most prevalent type of cancer. Melanoma, despite being the least common skin cancer...</p>
+              <!-- <p>The art of storytelling. Hypertext, clean code, and beauty as narrative elements. Just essential features and lovely CSS. All content is for demo purposes only. </p> -->
+            </div>
+            <!-- end .content-left -->
+            <ul class="flexblock metrics">
+              <li>
+                Responsible For
+                <span>75%</span>
+                Skin Cancer Deaths
+              </li>
+              <li>
+                Early And Accurate <br> Detection Is
+                <span>
+                  <svg class="fa-key">
+                    <use xlink:href="#fa-key"></use>
+                  </svg>
+                </span>
+                
+              </li>
+              <li>
+                5-year Survival Rate   
+                <span>
+                  18%
+                  <!-- <svg class="fa-line-chart">
+                    <use xlink:href="#fa-line-chart"></use>
+                  </svg> -->
+                </span>
+               With Metastasis
+                
+              </li>
+
+              <li>
+                5-year Survival Rate   
+                <span>
+                  98%
+                  <!-- <svg class="fa-line-chart">
+                    <use xlink:href="#fa-line-chart"></use>
+                  </svg> -->
+                </span>
+               With Early Detection
+                
+              </li>
+
+
+              <li>
+               
+                <span>
+                  2200%
+                  <!-- <svg class="fa-line-chart">
+                    <use xlink:href="#fa-line-chart"></use>
+                  </svg> -->
+                </span>
+                more expensive to <br> diagnose and treat
+                
+              </li>
+
+              <li>
+                Positive Impact <br> on Millions of
+                <span>
+                  <svg class="fa-users">
+                    <use xlink:href="#fa-users"></use>
+                  </svg>
+                </span>
+                
+              </li>
+
+              
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        
+
+        <section class="bg-apple">
+          <header>
+            <!--.wrap o <nav> = container 1200px -->
+            <!-- <div class="wrap">
+              <p>Header <span class="alignright">.alignright</span></p>
+            </div> -->
+          </header>
+          <div class="aligncenter fadeInUp">
+            <h2>OBJECTIVES</h2>
+            <!-- <p>Put content wherever you want.</p> -->
+          </div>
+          <!-- <footer class="bg-trans-dark">
+            <div class="wrap">
+              <p>
+                <span class="alignleft">
+                Footer
+                </span>
+                <span class="alignright">
+                  <a href="#" title="Twitter">
+                    <svg class="fa-twitter">
+                      <use xlink:href="#fa-twitter"></use>
+                    </svg>
+                    @username
+                  </a>
+                </span>
+              </p>
+            </div>
+          </footer> -->
+        </section>
+
+        <section class="bg-apple slide-top">
+          <div class="wrap">
+            <div class="content-left">
+              <h3>1</h3>
+              <p>create an AI tool that considering the image of a mole, can estimate the probability that a mole can be malign.</p>
+              <!-- <p><code>.slide-top and .content-left</code></p> -->
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        
+        <section class="bg-apple slide-top">
+          <div class="wrap">
+            <div class="content-right">
+              <h3>2</h3>
+              <p>Early enough to improve chances of survival.</p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="content-center">
+              <h3>3</h3>
+              <p>significantly reduce treatment cost.</p>
+              <!-- <p><code>.slide-top and .content-right</code></p> -->
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        
+        <section class="bg-apple slide-bottom">
+          <div class="wrap">
+            <div class="content-left">
+              <h3>4</h3>
+              <p> Reduce large burden of referrals to dermatologists (Skin Specialist).</p>
+              <!-- <p><code>.content-left</code></p> -->
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        
+        <section class="bg-apple slide-bottom">
+          <div class="wrap">
+            <div class="content-right">
+              <h3>5</h3>
+              
+              <p>Reduce long waiting time.</p>
+              <!-- <p><code>.content-center</code></p> -->
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        
+      
+       
+        <section class="bg-apple">
+          <header>
+            <!--.wrap o <nav> = container 1200px -->
+            <!-- <div class="wrap">
+              <p>Header <span class="alignright">.alignright</span></p>
+            </div> -->
+          </header>
+          <div class="aligncenter zoomIn">
+            <h2>DATA</h2>
+            <!-- <p>Put content wherever you want.</p> -->
+          </div>
+          <!-- <footer class="bg-trans-dark">
+            <div class="wrap">
+              <p>
+                <span class="alignleft">
+                Footer
+                </span>
+                <span class="alignright">
+                  <a href="#" title="Twitter">
+                    <svg class="fa-twitter">
+                      <use xlink:href="#fa-twitter"></use>
+                    </svg>
+                    @username
+                  </a>
+                </span>
+              </p>
+            </div>
+          </footer> -->
+        </section>
+        
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="card-50">
+              <figure><img class="aligncenter" src="{{ url_for('static', filename='images/dataset.png')}}" alt="iPhone"></figure>
+              <div class="flex-content">
+                <!-- <h2>
+                  <svg class="fa-apple">
+                    <use xlink:href="#fa-apple"></use>
+                  </svg> -->
+                  
+                </h2>
+                <p class="text-intro">Source: <a href="https://challenge2020.isic-archive.com/" target="_blank">Official dataset of the SIIM-ISIC Melanoma Classification</a></p>
+                <p class="text-intro">Size: &nbsp; 33,126 images</p>
+                <p class="text-intro">Ground Truth: &nbsp; Histopathology &nbsp;| &nbsp; Expert Agreement
+                  
+                </p>
+                <!-- <p>Every iPhone they have made was built on the same belief. That a phone should be more than a collection of features. That, above all, a phone should be absolutely simple, beautiful, and magical to use.</p> -->
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-50-->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="card-50">
+              <figure><img class="aligncenter" src="{{ url_for('static', filename='images/imbalance.jpg')}}" alt="iPhone"></figure>
+              <div class="flex-content">
+                <h2>
+                  <!-- <svg class="fa-apple">
+                    <use xlink:href="#fa-apple"></use>
+                  </svg> -->
+                  Target Class Distribution
+                </h2>
+                <ul>
+                  <li><p class="text-intro">Extreme Class Imbalance</p></li>
+                </ul>
+                <!-- <p>Every iPhone they have made was built on the same belief. That a phone should be more than a collection of features. That, above all, a phone should be absolutely simple, beautiful, and magical to use.</p> -->
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-50-->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="card-50">
+              <figure><img class="aligncenter" src="{{ url_for('static', filename='images/oversampling.jpg')}}" alt="iPhone"></figure>
+              <div class="flex-content">
+                <h2>
+                  <!-- <svg class="fa-apple">
+                    <use xlink:href="#fa-apple"></use>
+                  </svg> -->
+                  PREPROCESSING
+                </h2>
+                <ul>
+
+                  <li>Resizing (256x256x3)</li>
+                  <li>Horizontal and Vertical Flipping</li>
+                  <li>Rotation</li>
+                  <li>Oversampling</li>
+                  
+                  <!-- <li>SMOTE - Synthetic Minority Oversampling Technique</li> -->
+                </ul>
+                <!-- <p class="text-intro">3D Touch, 12MP photos, and 4K video.</p>
+                <p>Every iPhone they have made was built on the same belief. That a phone should be more than a collection of features. That, above all, a phone should be absolutely simple, beautiful, and magical to use.</p> -->
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-50-->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <h2>Loss And Evaluation Metrics</h2>
+            <ul class="flexblock features">
+              <li>
+                <div>
+                  <h2>
+                    <span>&rarr;</span>
+                    Binary Cross Entropy Loss
+                  <!-- </h2>
+                  with arrow keys and swipe.
+                </div> -->
+              </li>
+
+              <li>
+                <div>
+                  <h2>
+                    <span>&rarr;</span>
+                    Confusion Matrix
+                  <!-- </h2>
+                  with arrow keys and swipe.
+                </div> -->
+              </li>
+
+              <li>
+                <div>
+                  <h2>
+                    <span>&rarr;</span>
+                    AUC/ROC Curve
+                  <!-- </h2>
+                  with arrow keys and swipe.
+                </div> -->
+              </li>
+
+            </ul>
+          </div>
+        </section>
+        
+        
+        
+        <section class="bg-apple">
+          <header>
+            <!--.wrap o <nav> = container 1200px -->
+            <!-- <div class="wrap">
+              <p>Header <span class="alignright">.alignright</span></p>
+            </div> -->
+          </header>
+          <div class="aligncenter fadeInUp">
+            <h2>MODEL ARCHITECTURE AND TRAINING</h2>
+            <!-- <p>Put content wherever you want.</p> -->
+          </div>
+          
+        </section>
+
+        
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h2>
+                  <svg class="fa-data">
+                    <use xlink:href="#fa-data"></use>
+                  </svg>
+                  Model Architecture
+                </h2>
+                <ul>
+                  <li>Convolutional Neural Networks</li>
+                  <li>Very good at the task of image processing and classifications</li>
+                  <li>Transfer Learning: &nbsp; VGG16</li>
+                </ul>
+                
+              </div>
+              <!-- end .column-->
+              <div class="column">
+                <figure>
+                  <img src="{{ url_for('static', filename='images/vgg1.png')}}" alt="iPhone">
+                </figure>
+              </div>
+              <!-- end figure-->
+            </div>
+            <!-- end .grid-->
+          </div>
+          <!-- end .wrap-->
+        </section>
+
+        
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h2>
+                  <svg class="fa-data">
+                    <use xlink:href="#fa-data"></use>
+                  </svg>
+                  Model Training
+                </h2>
+                <p class="text-intro">Hyperparameters Used: </p>
+                <ul class="description">
+                  <li>
+                    <span class="text-label">
+                    Optimizer:
+                    </span>
+                    Adam
+                  </li>
+                  <li>
+                    <span class="text-label">
+                    LR:
+                    </span>
+                    0.001
+                  </li>
+                  <li>
+                    <span class="text-label">
+                    Batch Size:
+                    </span>
+                    32
+                  </li>
+                  <li>
+                    <span class="text-label">
+                    Epochs:
+                    </span>
+                    60
+                  </li>
+                  
+
+                </ul>
+              </div>
+              <!-- end .column-->
+              <div class="column">
+                <figure>
+                  <img src="{{ url_for('static', filename='images/loss3.png')}}" alt="iPhone">
+                </figure>
+
+              
+              </div>
+
+              <div class="column">
+                
+
+                <figure>
+                  <img src="{{ url_for('static', filename='images/acc3.png')}}" alt="iPhone">
+                </figure>
+              </div>
+              <!-- end figure-->
+            </div>
+            <!-- end .grid-->
+          </div>
+          <!-- end .wrap-->
+        </section>
+
+        <section class="bg-apple">
+          <header>
+            <!--.wrap o <nav> = container 1200px -->
+            <!-- <div class="wrap">
+              <p>Header <span class="alignright">.alignright</span></p>
+            </div> -->
+          </header>
+          <div class="aligncenter fadeInUp">
+            <h2>RESULTS AND MODEL EVALUATION</h2>
+            <!-- <p>Put content wherever you want.</p> -->
+          </div>
+        </section>
+        
+
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="card-50">
+              <!-- <div class="flex-content">
+                <ul class="flexblock specs">
+                  <li>
+                    <div>
+                      <svg class="fa-wifi">
+                        <use xlink:href="#fa-wifi"></use>
+                      </svg>
+                      <h2>Ultra-Fast WiFi</h2>
+                      Faster LTE with the best worldwide roaming.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <svg class="fa-camera">
+                        <use xlink:href="#fa-camera"></use>
+                      </svg>
+                      <h2>Two cameras that shoot as one.</h2>
+                      12MP wide angle.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <svg class="fa-life-ring">
+                        <use xlink:href="#fa-life-ring"></use>
+                      </svg>
+                      <h2>Lifetime Warranty </h2>
+                      We'll fix it or if we can't, we'll replace it.
+                    </div>
+                  </li>
+                </ul>
+              </div> -->
+              <!-- end .flex-content-->
+              
+              <div class="flexblock wrap">
+              <figure>
+                <img class="aligncenter" src="{{ url_for('static', filename='images/cm11.png')}}" alt="iPhone 6">
+                
+              </figure>
+
+              <figure>
+                <img class="aligncenter" src="{{ url_for('static', filename='images/cm22.png')}}" alt="iPhone 6">
+                
+              </figure>
+            </div>
+
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="card-50">
+              <!-- <div class="flex-content">
+                <ul class="flexblock specs">
+                  <li>
+                    <div>
+                      <svg class="fa-wifi">
+                        <use xlink:href="#fa-wifi"></use>
+                      </svg>
+                      <h2>Ultra-Fast WiFi</h2>
+                      Faster LTE with the best worldwide roaming.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <svg class="fa-camera">
+                        <use xlink:href="#fa-camera"></use>
+                      </svg>
+                      <h2>Two cameras that shoot as one.</h2>
+                      12MP wide angle.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <svg class="fa-life-ring">
+                        <use xlink:href="#fa-life-ring"></use>
+                      </svg>
+                      <h2>Lifetime Warranty </h2>
+                      We'll fix it or if we can't, we'll replace it.
+                    </div>
+                  </li>
+                </ul>
+              </div> -->
+              <!-- end .flex-content-->
+              
+              <figure>
+                <img class="aligncenter" src="{{ url_for('static', filename='images/cr.png')}}" alt="iPhone 6">
+              </figure>
+
+              <figure>
+                <img class="aligncenter" src="{{ url_for('static', filename='images/roc3.png')}}" alt="iPhone 6">
+              </figure>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple aligncenter">
+          <div class="wrap zoomIn">
+            <h1>
+              <!-- <svg class="fa-apple">
+                <use xlink:href="#fa-apple"></use>
+              </svg> -->
+              <img src="{{ url_for('static', filename='images/demo.jpg')}}" alt="DEMO">
+              <div>
+                <p>
+                  <!-- <a href="#" class="button" title="Case study">Case study &rsaquo;</a> -->
+                  <a href="{{url_for('demo')}}" class="button ghost zoomIn" title="Apple Website">CLICK HERE FOR DEMO  &rsaquo;</a>
+                </p>
+              </div>
+              
+            </h1>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+       
+
+  
+
+  <section class="bg-apple aligncenter">
+    <!-- <span class="background-right-bottom" style="background-image:url('https://webslides.tv/static/images/tim-cook.png')"></span> -->
+    <div class="wrap">
+      <h1>One more thing...</h1>
+    </div>
+    <!-- .end .wrap -->
+  </section>
+
+  <section class="bg-apple aligncenter">
+    <h2 class="text-emoji zoomIn">😎</h2>
+    <h3><strong>Thank you!</strong></h2>
+      <h3><strong>And.....</strong></h2>
+    <!-- <p><a href="https://twitter.com/webslides" title="@WebSlides on Twitter">@WebSlides</a></p> -->
+  </section>
+
+  
+  <section class="bg-apple aligncenter">
+       
+    
+      <p>
+        <!-- <a href="#" class="button" title="Case study">Case study &rsaquo;</a> -->
+        <a href="{{url_for('index')}}" class="button ghost" title="Apple Website">CLICK HERE &rsaquo;</a> <h3>TO CONTACT ME</h3>
+      </p>
+    </div>
+  
+<!-- .end .wrap -->
+</section>
+
+        
+       
+        
+      </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="{{ url_for('static', filename='js/webslides.js')}}"></script>
+
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="{{ url_for('static', filename='js/svg-icons.js')}}"></script>
+
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block body %}
+<body>
+    <div class="banner">
+
+    </div>
+    <div class="conten">
+        <!-- <h1> PREG-BOT</h1> -->
+        <p>
+            Are you curious about melanoma but you find the information on the internet a lot and overwhelming?<br>
+            <!-- PREG-BOT is here to the rescue. All you need do is enter your questions in the box below and the PREG-BOT will give you concise answers.<br>
+            The PREG-BOT saves you a lot of time and energy invested in sifting through tons of information available on the internet.  -->
+        </p>
+        <form method='POST' action='/'>
+            <label for="fname">Type your question in the box</label><br><br>
+            <textarea rows="5" cols="65" id="fname" name="question">
+            </textarea><br><br>
+            <input type="submit" class="btn" value="Submit">
+        </form>
+    </div> 
+</body>
+{% endblock %}
+© 2021 GitHub, Inc.

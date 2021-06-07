@@ -1,6 +1,8 @@
 # MoleScout
 
-# Usage
+## About And Demo
+    $ http://molescout.us-east-2.elasticbeanstalk.com
+
 
 ## Instalation
 

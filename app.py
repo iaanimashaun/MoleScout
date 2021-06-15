@@ -28,10 +28,10 @@ from werkzeug.utils import secure_filename
 
 
 # nlp = pipeline("question-answering", model=model, tokenizer=tokenizer)
-application = Flask(__name__)
+app = Flask(__name__)
 
 #bootstrap = Bootstrap(application)
-#model = models.densenet121(pretrained=True)               # Trained on 1000 classes from ImageNet
+#model = models.densenet121(pretrained=True)               
 #model = torch.load('model.pth')
 class MyClassifier(nn.Module):
     """
@@ -158,20 +158,20 @@ def render_prediction(prediction_idx):
     return prediction_idx, class_name
 
 
-@application.route('/keynote', methods=['GET', 'POST'])
+@app.route('/keynote', methods=['GET', 'POST'])
 def keynote():
     return render_template('keynote.html')
 
-@application.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def index():
     return render_template('me.html')
 
 
-@application.route('/demo', methods=['GET', 'POST'])
+@app.route('/demo', methods=['GET', 'POST'])
 def demo():
     return render_template('demo.html')
 
-@application.route('/predict', methods=['GET','POST'])
+@app.route('/predict', methods=['GET','POST'])
 def predict():
     if request.method == 'POST':
         file = request.files['file']
@@ -194,7 +194,7 @@ def predict():
                 return render_template('result.html', class_name=class_name, prob=prob,  file=file)
             
 
-@application.route('/predicturl', methods=['GET','POST'])
+@app.route('/predicturl', methods=['GET','POST'])
 def predicturl():
     input_transforms = [transforms.Resize(256),           # We use multiple TorchVision transforms to ready the image
         transforms.CenterCrop(256),
@@ -236,12 +236,12 @@ def predicturl():
                 #print(round(prob, 2))
                 return render_template('result.html', class_name=class_name, prob=prob)
 
-@application.route("/question")
+@app.route("/question")
 def home():
     return render_template('question.html')
 
 
 
 if __name__ == '__main__':
-    application.debug = True
-    application.run()
+    app.debug = True
+    app.run()

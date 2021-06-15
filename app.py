@@ -192,6 +192,7 @@ def predict():
                 else:
                     prob = probs[1]
                 return render_template('result.html', class_name=class_name, prob=prob,  file=file)
+      return 'This is get method'
             
 
 @app.route('/predicturl', methods=['GET','POST'])

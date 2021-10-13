@@ -18,7 +18,7 @@ First, clone this repository.
 After, install all necessary to run:
 
     $ python -m venv .env
-    $ source env/bin/activate
+    $ source .env/bin/activate
     $ pip install -r requirements.txt
 
 Then, run the application:

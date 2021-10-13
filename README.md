@@ -17,13 +17,13 @@ First, clone this repository.
 
 After, install all necessary to run:
 
-    $ conda create -n MoleScout
-    $ conda activate MoleScout
+    $ python -m venv .env
+    $ source env/bin/activate
     $ pip install -r requirements.txt
 
 Then, run the application:
 
-	$ python application.py
+	$ python app.py
 
 To see the application, access this url in your browser: 
 

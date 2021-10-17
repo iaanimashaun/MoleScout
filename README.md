@@ -17,7 +17,7 @@ First, install [git-lfs](https://git-lfs.github.com/) then clone this repository
     $ git clone https://github.com/iaanimashaun/MoleScout.git
     $ cd MoleScout
 
-After, install all necessary to run:
+After, create virtual environment and install all necessary packages:
 
     $ python -m venv env
     $ source env/bin/activate

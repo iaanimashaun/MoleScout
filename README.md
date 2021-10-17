@@ -1,7 +1,7 @@
 # MoleScout
 
 
-<!--   [About](http://molescout.us-east-2.elasticbeanstalk.com) -->
+  [About](http://molescout.us-east-2.elasticbeanstalk.com)
   
   
   
@@ -10,7 +10,9 @@
 
 ## Installation
 
-First, clone this repository.
+
+
+First, install [git-lfs](https://git-lfs.github.com/) then clone this repository.
 
     $ git clone https://github.com/iaanimashaun/MoleScout.git
     $ cd MoleScout
